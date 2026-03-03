@@ -1,0 +1,87 @@
+================================================================================
+COURSE RECOMMENDATION SYSTEM - HOW TO RUN
+================================================================================
+
+The app is ready! Here are the ways to start it:
+
+METHOD 1: Using Streamlit directly (Recommended)
+--------------------------------------------------
+Open Command Prompt or PowerShell in this folder and type:
+
+    streamlit run app.py
+
+If that doesn't work, try:
+
+    py -m streamlit run app.py
+
+    OR
+
+    python -m streamlit run app.py
+
+
+METHOD 2: Using the start script
+---------------------------------
+    python start_app.py
+
+    OR
+
+    py start_app.py
+
+
+METHOD 3: Double-click the batch file
+--------------------------------------
+    Double-click: run_app.bat
+
+
+WHAT HAPPENS WHEN YOU RUN IT:
+-----------------------------
+1. A terminal window will open
+2. You'll see: "You can now view your Streamlit app in your browser"
+3. Your browser should open automatically to: http://localhost:8501
+4. If browser doesn't open, copy the URL from terminal and paste in browser
+
+
+IF LOCALHOST DOESN'T OPEN:
+---------------------------
+1. Check the terminal - it will show the exact URL (might be port 8502, 8503, etc.)
+2. Manually open your browser and go to: http://localhost:8501
+3. If that doesn't work, try: http://127.0.0.1:8501
+
+
+IF YOU GET ERRORS:
+------------------
+1. "Python not found" or "streamlit not found"
+   → Install dependencies: pip install -r requirements.txt
+
+2. "Module not found"
+   → Make sure you're in the correct folder
+   → Run: pip install -r requirements.txt
+
+3. "Port already in use"
+   → Close other Streamlit apps
+   → Or use: streamlit run app.py --server.port 8502
+
+
+QUICK CHECK:
+------------
+Run this to test if everything is installed:
+    python demo.py
+
+Or:
+    py demo.py
+
+
+ONCE THE APP OPENS:
+-------------------
+1. Upload your CSV file (edtech (1).csv) in the sidebar
+2. Go to "Data Overview" tab to see your data
+3. Click "🚀 Train Models" button
+4. Wait for training (2-5 minutes)
+5. Go to "🎯 Recommendations" tab
+6. Select User ID and get recommendations!
+
+
+================================================================================
+Need help? Check README.md or PROJECT_REPORT.md for more details.
+================================================================================
+

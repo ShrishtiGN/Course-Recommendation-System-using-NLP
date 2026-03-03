@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamlit Localhost Output Simulation</title>
+    <style>
+        body {
+            font-family: 'Consolas', 'Monaco', monospace;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            margin: 0;
+        }
+        .terminal {
+            background: #0c0c0c;
+            border: 1px solid #3c3c3c;
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        .prompt {
+            color: #4ec9b0;
+        }
+        .command {
+            color: #dcdcaa;
+        }
+        .output {
+            color: #ce9178;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .url {
+            color: #4fc1ff;
+            font-weight: bold;
+        }
+        .success {
+            color: #4ec9b0;
+        }
+        .info {
+            color: #569cd6;
+        }
+        .warning {
+            color: #dcdcaa;
+        }
+        h1 {
+            color: #4ec9b0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .note {
+            background: #252526;
+            border-left: 3px solid #4ec9b0;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 3px;
+        }
+        .browser-preview {
+            background: #1e1e1e;
+            border: 2px solid #3c3c3c;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        .browser-bar {
+            background: #2d2d30;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Streamlit Localhost Output Simulation</h1>
+    
+    <div class="terminal">
+        <div class="prompt">PS C:\Users\Dell\Documents\NLP Mini prject></div>
+        <div class="command">streamlit run app.py</div>
+        <br>
+        
+        <div class="output">
+            Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+        </div>
+        <br>
+        <br>
+        
+        <div class="success">
+            You can now view your Streamlit app in your browser.
+        </div>
+        <br>
+        <br>
+        
+        <div class="info">
+            Local URL: <span class="url">http://localhost:8501</span>
+        </div>
+        <div class="info">
+            Network URL: <span class="url">http://192.168.1.100:8501</span>
+        </div>
+        <br>
+        <br>
+        
+        <div class="warning">
+            For better performance, install watchdog:
+        </div>
+        <div class="command" style="margin-left: 20px;">
+            pip install watchdog
+        </div>
+        <br>
+        <br>
+        
+        <div class="note">
+            <strong>Note:</strong> The server is now running. Your browser should open automatically.
+            <br>If it doesn't, copy the Local URL above and paste it in your browser.
+            <br><br>
+            To stop the server, press <strong>Ctrl+C</strong> in the terminal.
+        </div>
+    </div>
+    
+    <div class="browser-preview">
+        <div class="browser-bar">
+            🌐 http://localhost:8501
+        </div>
+        <div style="background: #1E1E1E; color: #F5F5DC; padding: 20px; border-radius: 3px;">
+            <h2 style="color: #F5F5DC; margin-top: 0;">Course Recommendation System</h2>
+            <hr style="border-color: #D4AF37;">
+            <p>This is what you'll see in your browser when the app loads.</p>
+            <p style="color: #D4AF37;">Theme: Black (#1E1E1E) background with Cream (#F5F5DC) text</p>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px; color: #888;">
+        <p>To see this in real life, run: <code style="color: #4ec9b0;">streamlit run app.py</code></p>
+        <p style="margin-top: 20px;">
+            <strong>If Python is not found:</strong><br>
+            • Install Python from python.org<br>
+            • Or try: <code>py -m streamlit run app.py</code><br>
+            • Or try: <code>python3 -m streamlit run app.py</code>
+        </p>
+    </div>
+</body>
+</html>
+

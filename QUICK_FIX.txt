@@ -1,0 +1,81 @@
+================================================================================
+QUICK FIX: Python Not Found - Localhost Won't Run
+================================================================================
+
+THE PROBLEM:
+-----------
+Python is not installed or not in PATH, so the app can't run.
+
+THE SOLUTION:
+-------------
+
+STEP 1: Install Python
+----------------------
+1. Go to: https://www.python.org/downloads/
+2. Download Python 3.11 or 3.12
+3. Run the installer
+4. **CRITICAL:** Check "Add Python to PATH" checkbox
+5. Click "Install Now"
+6. Wait for installation
+
+STEP 2: Restart Your Computer
+------------------------------
+After installing Python, restart your computer to update PATH.
+
+STEP 3: Open NEW Terminal
+--------------------------
+- Close all current terminals
+- Open a NEW Command Prompt or PowerShell
+- Navigate to project folder:
+  cd "C:\Users\Dell\Documents\NLP Mini prject"
+
+STEP 4: Install Dependencies
+----------------------------
+pip install -r requirements.txt
+
+STEP 5: Run the App
+-------------------
+streamlit run app.py
+
+STEP 6: Open Browser
+--------------------
+- Browser should open automatically
+- If not, go to: http://localhost:8501
+
+================================================================================
+ALTERNATIVE: Try These Commands
+================================================================================
+
+If Python is installed but "python" doesn't work, try:
+
+1. py -m streamlit run app.py
+2. python3 -m streamlit run app.py
+3. python -m streamlit run app.py
+
+Or double-click: try_all_ways.bat
+
+================================================================================
+VERIFY PYTHON IS INSTALLED
+================================================================================
+
+Run these commands to check:
+
+python --version
+py --version
+python3 --version
+
+If ANY of these show a version number, Python is installed.
+Use that command to run the app.
+
+================================================================================
+STILL NOT WORKING?
+================================================================================
+
+1. Read: INSTALL_PYTHON.md (detailed guide)
+2. Read: FIX_LOCALHOST.md (troubleshooting)
+3. Make sure Python is in PATH
+4. Restart computer after installation
+5. Use a NEW terminal window
+
+================================================================================
+
